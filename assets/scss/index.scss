@@ -1,0 +1,1153 @@
+/*begin nav*/
+.navigation {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 243.414px;
+    height: 32px;
+  }
+
+  &__img-name {
+    width: 199.414px;
+    height: 19.8px;
+    flex-shrink: 0;
+
+    img {
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  &__img-logo {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    height: 46px;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__button {
+    padding: 0px 30px;
+  }
+}
+
+/*end nav*/
+
+
+/*begin hero*/
+.hero {
+  display: flex;
+  padding: 80px 195px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+
+  &__frame {
+    display: flex;
+    width: 1050px;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
+  }
+
+  &__wrap-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+  }
+
+  &__title {
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+  }
+
+  &__button {
+    padding: 0px 50px;
+  }
+
+  &__additional-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1 0 0;
+
+      h3 {
+        font-family: var(--font-other);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        text-transform: capitalize;
+        margin: 0;
+      }
+
+      span {
+        font-size: 23.99px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__highlight {
+    display: flex;
+    height: 510px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+  }
+
+  &__image {
+    border-radius: 20px 20px 0px 0px;
+    height: 401px;
+    width: 510px;
+    object-fit: cover;
+  }
+
+  &__highlight-content {
+    display: flex;
+    height: 109px;
+    padding: 20px;
+    flex-direction: column;
+    // justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 0px 0px 20px 20px;
+    background: #3B3B3B;
+    border: 0px;
+
+    h3 {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      text-transform: capitalize;
+      margin: 0;
+      display: inline;
+    }
+  }
+
+  &__highlight-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+  }
+
+  &__highlight-avatar {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      border-radius: 100px;
+    }
+  }
+
+  &__highlight-name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+
+/*end hero*/
+
+
+/*trending collection*/
+.trending-collection {
+  display: flex;
+  padding: 80px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+
+  &__headline {
+    display: flex;
+    width: 1046px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &__heading {
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
+  }
+
+  &__subhead {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+  }
+
+  &__wrap-card {
+    display: flex;
+    width: 1050px;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__card {
+    display: flex;
+    width: 330px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex-shrink: 0;
+  }
+
+  &__photo-and-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    align-self: stretch;
+  }
+
+  &__photo-primary {
+    height: 330px;
+    align-self: stretch;
+    border-radius: 20px;
+  }
+
+  &__frame {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    align-self: stretch;
+
+    img {
+      height: 100px;
+      flex: 1 0 0;
+      border-radius: 20px;
+    }
+  }
+
+  &__number-additional {
+    display: flex;
+    height: 100px;
+    padding: 32px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    background: var(--Call-to-Action, #A259FF);
+    border-radius: 20px;
+
+    span {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%;
+      text-transform: capitalize;
+    }
+  }
+
+  &__content {
+    @extend .hero__highlight-content;
+    background: var(--color-background);
+    padding: 0;
+  }
+
+  &__info {
+    @extend .hero__highlight-info;
+  }
+
+  &__avatar {
+    @extend .hero__highlight-avatar;
+
+    img {
+      width: 24px;
+      height: 24px;
+      border-radius: 124px;
+    }
+  }
+}
+
+/*end trending collection*/
+
+/*begin top rated artist*/
+.top-rated-artists {
+  display: flex;
+  padding: 80px 195px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+
+  &__wrap-headline-button {
+    display: flex;
+    width: 1050px;
+    align-items: flex-end;
+    gap: 100px;
+    margin: auto;
+  }
+
+  &__headline {
+    @extend .trending-collection__headline;
+    width: 703px;
+  }
+
+  &__heading {
+    @extend .trending-collection__heading;
+  }
+
+  &__subhead {
+    @extend .trending-collection__subhead;
+  }
+
+  &__button {
+    padding: 0px 50px;
+    background-color: var(--color-background);
+    border: 2px solid var(--Call-to-Action, #A259FF);
+  }
+
+  &__wrap-card-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__wrap-card-row {
+    display: flex;
+    width: 1050px;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__card {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: #3B3B3B;
+    position: relative;
+  }
+
+  &__avatar {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    img {
+      width: 120px;
+      height: 120px;
+      flex-shrink: 0;
+      border-radius: 100px;
+
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    align-self: stretch;
+
+    h3 {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      /* 30.8px */
+      text-transform: capitalize;
+      margin: 0;
+    }
+  }
+
+  &__total-sales {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    position: relative;
+
+    span:nth-child(1) {
+      color: #858584;
+      text-align: right;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+
+    span:nth-child(2) {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  &__ranking-number {
+    border-radius: 20px;
+    height: 30px;
+    top: 18px;
+    left: 20px;
+    mix-blend-mode: normal;
+    position: absolute;
+    width: 30px;
+    background: #2B2B2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      color: #858584;
+    }
+  }
+}
+
+/*end top rated artist*/
+
+/*begin browse category*/
+.browse-category {
+  display: flex;
+  padding: 80px 195px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+
+  &__headline {
+    width: 1050px;
+  }
+
+  &__heading {
+    @extend .trending-collection__heading;
+  }
+
+  &__wrap-card-grid {
+    @extend .top-rated-artists__wrap-card-grid;
+  }
+
+  &__wrap-card-row {
+    @extend .top-rated-artists__wrap-card-row;
+  }
+
+  &__card {
+    @extend .top-rated-artists__card;
+    gap: 0;
+    padding: 0;
+  }
+
+  &__wrap-photo-icon {
+    height: 240px;
+    align-self: stretch;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  &__photo {
+    display: flex;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    img {
+      flex: 1 0 0;
+      align-self: stretch;
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+
+  &__category-icon {
+    @extend .browse-category__photo;
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(7.5px);
+    gap: 10px;
+    position: relative;
+    top: -240px;
+
+    img {
+      flex: 0 1 auto;
+      width: 100px;
+      height: 100px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__collection-name {
+    display: flex;
+    padding: 20px 30px 25px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+
+    h3 {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      text-transform: capitalize;
+      margin: 0;
+    }
+  }
+}
+
+/*end browse category*/
+
+/*begin discover more NFTs*/
+.discover-more {
+  display: flex;
+  padding: 80px 195px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+
+  &__wrap-headline-button {
+    @extend .top-rated-artists__wrap-headline-button;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__headline {
+    @extend .top-rated-artists__headline;
+  }
+
+  &__heading {
+    @extend .top-rated-artists__heading;
+  }
+
+  &__subhead {
+    @extend .top-rated-artists__subhead;
+  }
+
+  &__button {
+    @extend .top-rated-artists__button;
+  }
+
+  &__wrap-card-row {
+    @extend .top-rated-artists__wrap-card-row;
+  }
+
+  &__card {
+    display: flex;
+    height: 469px;
+    min-width: 260px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+  }
+
+  &__image-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    img {
+      height: 296px;
+      align-self: stretch;
+      border-radius: 20px 20px 0px 0px;
+
+    }
+  }
+
+  &__content {
+    display: flex;
+    padding: 20px 30px 25px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+    background: #3B3B3B;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &__artist-info {
+    @extend .top-rated-artists__info;
+    align-items: flex-start;
+
+    h3 {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      /* 30.8px */
+      text-transform: capitalize;
+
+    }
+  }
+
+  &__wrap-avatar-name {
+    @extend .trending-collection__info;
+  }
+
+  &__avatar {
+    @extend .trending-collection__avatar;
+
+    img {
+      width: 24px;
+      height: 24px;
+      border-radius: 124px;
+    }
+  }
+
+  &__addition-info {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+
+  &__price {
+    display: flex;
+    padding-right: 21px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+  }
+
+  &__price-title {
+    color: #858584;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  &__price-value {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__highest-bid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    flex: 1 0 0;
+  }
+
+  &__highest-bid-title {
+    @extend .discover-more__price-title;
+  }
+
+  &__highest-bid-value {
+    @extend .discover-more__price-value;
+  }
+}
+
+/*end discover more NFTs*/
+
+/*begin NFT highlight*/
+.NFT-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  background-image: url("../images/nft-highlight@1x.png");
+  background-color: lightgray;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrap-content {
+    display: flex;
+    padding: 360px 195px 60px 195px;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: stretch;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%);
+  }
+
+  &__frame {
+    display: flex;
+    width: 1050px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
+  }
+
+  &__artist-card {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    background: #3B3B3B;
+  }
+
+  &__avatar {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+
+    span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  &__title {
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  &__button {
+    padding: 22px 50px;
+    background: var(--color-text);
+
+    span {
+      color: #2B2B2B;
+    }
+  }
+
+  &__wrap-auction-timer {
+    display: flex;
+    width: 295px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(59, 59, 59, 0.50);
+
+    backdrop-filter: blur(5px);
+  }
+
+  &__auction-timer-title {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin: 0;
+  }
+
+  &__timer {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px; //edit
+    align-self: stretch;
+
+    h4 {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+      /* 39.2px */
+      text-transform: capitalize;
+      margin: 0;
+    }
+  }
+
+  &__time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    flex: 1 0 0;
+
+    h3 {
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      text-transform: capitalize;
+      margin: 0;
+    }
+
+    span {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+    }
+  }
+}
+
+/*end NFT highlight*/
+
+/*begin how it work*/
+.how-it-work {
+  display: flex;
+  padding: 80px 195px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+
+  &__headline {
+    @extend .trending-collection__headline;
+  }
+
+  &__heading {
+    @extend .trending-collection__heading;
+  }
+
+  &__subhead {
+    @extend .trending-collection__subhead;
+  }
+
+  &__wrap-card {
+    @extend .discover-more__wrap-card-row;
+  }
+
+  &__card {
+    display: flex;
+    width: 330px;
+    padding: 10px 30px 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #3b3b3b;
+    border-radius: 20px;
+  }
+
+  &__card-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+
+  &__card-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+
+  &__card-desc {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+  }
+}
+
+/*end how it word*/
+
+/* begin subscribe widget*/
+.subscribe-widget {
+  display: flex;
+  padding: 40px 195px 80px 195px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  &__wrap-content {
+    display: flex;
+    width: 1050px;
+    padding: 60px;
+    align-items: center;
+    gap: 80px;
+    border-radius: 20px;
+    background: #3B3B3B;
+  }
+
+  &__image {
+    height: 310px;
+    min-width: 425px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  &__frame {
+    display: flex;
+    width: 425px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex-shrink: 0;
+  }
+
+  &__headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+
+  &__heading {
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 45.6px */
+    text-transform: capitalize;
+  }
+
+  &__subhead {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 35.2px */
+    text-transform: capitalize;
+  }
+
+  &__form-sub {
+    display: flex;
+    height: 60px;
+    padding: 16px 0px 16px 20px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #ffff;
+
+    input {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      color: #2B2B2B;
+      background: #ffff;
+    }
+
+    button {
+      padding: 0 50px;
+    }
+  }
+}
+
+/*end subscribe widget*/
+
+/*begin footer*/
+.footer {
+  display: flex;
+  padding: 40px 195px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+  background-color: #3B3B3B;
+  margin-bottom: 25px;
+
+  &__wrap-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__NTF-marketplace {
+    display: flex;
+    width: 327.414px;
+    padding-right: 84px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__logo {
+    @extend .navigation__logo;
+  }
+
+  &__img-name {
+    @extend .navigation__img-name;
+  }
+
+  &__additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: #cccccc;
+  }
+
+  &__comunity-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  &__social-media {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &__explore {
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  h5 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    text-transform: capitalize;
+  }
+
+  &__pages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    width: 420px;
+  }
+
+  &__wrap-info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__form-sub {
+    @extend .subscribe-widget__form-sub;
+  }
+
+  &__frame-end {
+    display: flex;
+    width: 1049.414px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    p {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+    }
+  }
+
+  &__divider {
+    background: #858584;
+    width: 1049.414px;
+    height: 1px;
+  }
+
+}
+
+/*end footer*/
