@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.trans, .button--trans-main {
+  transition: all 0.3s ease;
+}
+.trans:hover, .button--trans-main:hover {
+  transform: scale(0.95);
+}
+
 :root {
   --color-text: #FFFFFF;
   --color-background: #2B2B2B;
@@ -20,7 +27,13 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -43,7 +56,7 @@ ul {
   padding: 0;
 }
 
-button {
+.button {
   display: flex;
   height: 60px;
   justify-content: center;
@@ -53,8 +66,7 @@ button {
   background: var(--color-main);
   border: 0px;
 }
-
-button span {
+.button span {
   color: var(--color-text);
   text-align: center;
   font-size: 16px;
@@ -62,10 +74,16 @@ button span {
   font-weight: 600;
   line-height: 140%;
 }
-
-button img {
+.button img {
   width: 20px;
   height: 20px;
+}
+.button--trans-other {
+  transition: all 0.3s ease;
+}
+.button--trans-other:hover {
+  transform: scale(0.95);
+  transform-origin: center;
 }
 
 /*# sourceMappingURL=base.css.map */

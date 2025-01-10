@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="../assets/css/base.css">
-  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/homepage/index.css">
+  <link rel="stylesheet" href="../assets/css/homepage/responsive-index-tablet.css">  
+  <link rel="stylesheet" href="../assets/css/homepage/responsive-index-mobile.css">
+ 
 </head>
 
 <body>
   <!--begin navigation-->
   <nav class="navigation">
-    <a class="navigation__logo">
+    <a class="navigation__logo" href="#">
       <div class="navigation__img-logo">
         <img src="../assets/images/logo.png" alt="logo">
       </div>
@@ -30,156 +33,163 @@
       <li class="navigation__item">
         <a href="#" class="navigation__link">Connect a wallet</a>
       </li>
-      <button class="navigation__button">
+      <a class="navigation__button button button--trans-main" href="#">
         <img src="../assets/images/User.png" alt="user_icon">
         <span>Sign Up</span>
-      </button>
+      </a>
     </ul>
+    <div class="navigation__icon-responsive">
+      <img src="../assets/images/Burger Menu.png" alt="">
+    </div>
   </nav>
   <!--end navigation-->
 
   <!--begin hero-->
   <section class="hero">
-    <div class="hero__frame">
-      <div class="hero__content">
-        <div class="hero__wrap-title">
-          <div class="hero__title">
-            Discover digital art & Collect NFTs
+    <!-- <div class="container"> -->
+      <div class="hero__frame">
+        <div class="hero__content">
+          <div class="hero__wrap-title">
+            <h1 class="hero__title">
+              Discover digital art & Collect Nfts
+            </h1>
+            <p class="hero__subtitle">
+              NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
+            </p>
           </div>
-          <div class="hero__subtitle">
-            NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
-          </div>
+          <a class="hero__button button button--trans-main">
+            <img src="../assets/images/RocketLaunch.png" alt="icon">
+            <span>Get Started</span>
+          </a>
+          <ul class="hero__additional-info">
+            <li>
+              <h3>
+                240k+
+              </h3>
+              <span>Total Sale</span>
+            </li>
+            <li>
+              <h3>
+                100K+
+              </h3>
+              <span>Auctions</span>
+            </li>
+            <li>
+              <h3>
+                240K+
+              </h3>
+              <span>Artists</span>
+            </li>
+          </ul>
         </div>
-        <button class="hero__button">
-          <img src="../assets/images/RocketLaunch.png" alt="icon">
-          <span>Get Started</span>
-        </button>
-        <ul class="hero__additional-info">
-          <li>
-            <h3>
-              240k+
-            </h3>
-            <span>Total Sale</span>
-          </li>
-          <li>
-            <h3>
-              100K+
-            </h3>
-            <span>Auctions</span>
-          </li>
-          <li>
-            <h3>
-              240K+
-            </h3>
-            <span>Artists</span>
-          </li>
-        </ul>
-      </div>
-      <div class="hero__highlight">
-        <img class="hero__image" src="../assets/images/Placeholder.png" alt="image-placeholder">
-        <div class="hero__highlight-content">
-          <h3>Space Walking</h3>
-          <div class="hero__highlight-info">
-            <div class="hero__highlight-avatar">
-              <img src="../assets/images/Avatar Placeholder.png" alt="avatar">
+        <div class="hero__highlight">
+          <img class="hero__image" src="../assets/images/Placeholder.png" alt="image-placeholder">
+          <div class="hero__highlight-content">
+            <h3>Space Walking</h3>
+            <div class="hero__highlight-info">
+              <div class="hero__highlight-avatar">
+                <img src="../assets/images/Avatar Placeholder.png" alt="avatar">
+              </div>
+              <span class="hero__highlight-name-user">
+                Animakid
+              </span>
             </div>
-            <span class="hero__highlight-name-user">
-              Animakid
-            </span>
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </section>
   <!--end hero-->
 
   <!--begin trending collection-->
   <section class="trending-collection">
-    <div class="trending-collection__headline">
-      <div class="trending-collection__heading">
-        Trending Collection
+      <div class="trending-collection__wrapper">
+        <div class="trending-collection__headline">
+          <h2 class="trending-collection__heading">
+            Trending Collection
+          </h2>
+          <p class="trending-collection__subhead">
+            Checkout our weekly updated trending collection.
+          </p>
+        </div>
+        <div class="trending-collection__wrap-card">
+          <div class="trending-collection__card">
+            <div class="trending-collection__photo-and-number">
+              <img src="../assets/images/Dog.png" alt="image-primary" class="trending-collection__photo-primary">
+              <div class="trending-collection__frame">
+                <img src="../assets/images/anonymous-animal-1.png" alt="image-secondary">
+                <img src="../assets/images/anonymous-animal-2.png" alt="image-secondary">
+                <div class="trending-collection__number-additional">
+                  <span>
+                    1025+
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="trending-collection__content">
+              <h3>DSGN Animals</h3>
+              <div class="trending-collection__info">
+                <div class="trending-collection__avatar">
+                  <img src="../assets/images/anonymous-animal-3.png" alt="avatar">
+                </div>
+                <span class="trending-collection__user-name">
+                  Mr .Fox
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="trending-collection__card">
+            <div class="trending-collection__photo-and-number">
+              <img src="../assets/images/Dog.png" alt="image-primary" class="trending-collection__photo-primary">
+              <div class="trending-collection__frame">
+                <img src="../assets/images/anonymous-animal-1.png" alt="image-secondary">
+                <img src="../assets/images/anonymous-animal-2.png" alt="image-secondary">
+                <div class="trending-collection__number-additional">
+                  <span>
+                    1025+
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="trending-collection__content">
+              <h3>DSGN Animals</h3>
+              <div class="trending-collection__info">
+                <div class="trending-collection__avatar">
+                  <img src="../assets/images/anonymous-animal-3.png" alt="avatar">
+                </div>
+                <span class="trending-collection__user-name">
+                  Mr .Fox
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="trending-collection__card">
+            <div class="trending-collection__photo-and-number">
+              <img src="../assets/images/Dog.png" alt="image-primary" class="trending-collection__photo-primary">
+              <div class="trending-collection__frame">
+                <img src="../assets/images/anonymous-animal-1.png" alt="image-secondary">
+                <img src="../assets/images/anonymous-animal-2.png" alt="image-secondary">
+                <div class="trending-collection__number-additional">
+                  <span>
+                    1025+
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="trending-collection__content">
+              <h3>DSGN Animals</h3>
+              <div class="trending-collection__info">
+                <div class="trending-collection__avatar">
+                  <img src="../assets/images/anonymous-animal-3.png" alt="avatar">
+                </div>
+                <span class="trending-collection__user-name">
+                  Mr .Fox
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="trending-collection__subhead">
-        Checkout our weekly updated trending collection.
-      </div>
-    </div>
-    <div class="trending-collection__wrap-card">
-      <div class="trending-collection__card">
-        <div class="trending-collection__photo-and-number">
-          <img src="../assets/images/Dog.png" alt="image-primary" class="trending-collection__photo-primary">
-          <div class="trending-collection__frame">
-            <img src="../assets/images/anonymous-animal-1.png" alt="image-secondary">
-            <img src="../assets/images/anonymous-animal-2.png" alt="image-secondary">
-            <div class="trending-collection__number-additional">
-              <span>
-                1025+
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="trending-collection__content">
-          <h3>DSGN Animals</h3>
-          <div class="trending-collection__info">
-            <div class="trending-collection__avatar">
-              <img src="../assets/images/anonymous-animal-3.png" alt="avatar">
-            </div>
-            <span class="trending-collection__user-name">
-              Mr .Fox
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="trending-collection__card">
-        <div class="trending-collection__photo-and-number">
-          <img src="../assets/images/Dog.png" alt="image-primary" class="trending-collection__photo-primary">
-          <div class="trending-collection__frame">
-            <img src="../assets/images/anonymous-animal-1.png" alt="image-secondary">
-            <img src="../assets/images/anonymous-animal-2.png" alt="image-secondary">
-            <div class="trending-collection__number-additional">
-              <span>
-                1025+
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="trending-collection__content">
-          <h3>DSGN Animals</h3>
-          <div class="trending-collection__info">
-            <div class="trending-collection__avatar">
-              <img src="../assets/images/anonymous-animal-3.png" alt="avatar">
-            </div>
-            <span class="trending-collection__user-name">
-              Mr .Fox
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="trending-collection__card">
-        <div class="trending-collection__photo-and-number">
-          <img src="../assets/images/Dog.png" alt="image-primary" class="trending-collection__photo-primary">
-          <div class="trending-collection__frame">
-            <img src="../assets/images/anonymous-animal-1.png" alt="image-secondary">
-            <img src="../assets/images/anonymous-animal-2.png" alt="image-secondary">
-            <div class="trending-collection__number-additional">
-              <span>
-                1025+
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="trending-collection__content">
-          <h3>DSGN Animals</h3>
-          <div class="trending-collection__info">
-            <div class="trending-collection__avatar">
-              <img src="../assets/images/anonymous-animal-3.png" alt="avatar">
-            </div>
-            <span class="trending-collection__user-name">
-              Mr .Fox
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
   <!--end trending collection-->
 
@@ -187,251 +197,245 @@
   <section class="top-rated-artists">
     <div class="top-rated-artists__wrap-headline-button">
       <div class="top-rated-artists__headline">
-        <div class="top-rated-artists__heading">
+        <h2 class="top-rated-artists__heading">
           Top creators
-        </div>
-        <div class="top-rated-artists__subhead">
+        </h2>
+        <p class="top-rated-artists__subhead">
           Checkout Top Rated Creators on the NFT Marketplace
-        </div>
+        </p>
       </div>
-      <button class="top-rated-artists__button">
+      <a class="top-rated-artists__button button button--trans-main" href="#">
         <img src="../assets/images/RocketLaunch-1.png" alt="icon">
         <span>View Ranking</span>
-      </button>
+      </a>
     </div>
     <div class="top-rated-artists__wrap-card-grid">
-      <div class="top-rated-artists__wrap-card-row">
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
           </div>
         </div>
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
-          </div>
-        </div>
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
-          </div>
-        </div>
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
-          </div>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
         </div>
       </div>
-      <div class="top-rated-artists__wrap-card-row">
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
           </div>
         </div>
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
-          </div>
-        </div>
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
-          </div>
-        </div>
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
-          </div>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
         </div>
       </div>
-      <div class="top-rated-artists__wrap-card-row">
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
           </div>
         </div>
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
           </div>
         </div>
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
-          </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
-          </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
           </div>
         </div>
-        <div class="top-rated-artists__card">
-          <div class="top-rated-artists__avatar">
-            <img src="../assets/images/User-1.png" alt="avatar">
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
           </div>
-          <div class="top-rated-artists__info">
-            <h3 class="top-rated-artists__name">Keepitreal</h3>
-            <div class="top-rated-artists__total-sales">
-              <span>
-                Total Sales:
-              </span>
-              <span>
-                34.53 ETH
-              </span>
-            </div>
+        </div>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
           </div>
-          <div class="top-rated-artists__ranking-number">
-            <span>1</span>
+        </div>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
           </div>
+        </div>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
+          </div>
+        </div>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
+          </div>
+        </div>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
+          </div>
+        </div>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="top-rated-artists__card">
+        <div class="top-rated-artists__avatar">
+          <img src="../assets/images/User-1.png" alt="avatar">
+        </div>
+        <div class="top-rated-artists__info">
+          <h3 class="top-rated-artists__name">Keepitreal</h3>
+          <div class="top-rated-artists__total-sales">
+            <span>
+              Total Sales:
+            </span>
+            <span>
+              34.53 ETH
+            </span>
+          </div>
+        </div>
+        <div class="top-rated-artists__ranking-number">
+          <span>1</span>
         </div>
       </div>
     </div>
@@ -441,133 +445,129 @@
   <!--begin browse category-->
   <section class="browse-category">
     <div class="browse-category__headline">
-      <div class="browse-category__heading">
+      <h2 class="browse-category__heading">
         Browse Categories
-      </div>
+      </h2>
     </div>
     <div class="browse-category__wrap-card-grid">
-      <div class="browse-category__wrap-card-row">
-        <div class="browse-category__card">
-          <div class="browse-category__wrap-photo-icon">
-            <div class="browse-category__photo">
-              <img src="../assets/images/Background.png" alt="background">
-            </div>
-            <div class="browse-category__category-icon">
-              <div class="wrap__category-icon">
-                <img src="../assets/images/PaintBrush.png" alt="category-icon">
-              </div>
-            </div>
+      <div class="browse-category__card">
+        <div class="browse-category__wrap-photo-icon">
+          <div class="browse-category__photo">
+            <img src="../assets/images/Background.png" alt="background">
           </div>
-          <div class="browse-category__collection-name">
-            <h3>Art</h3>
+          <div class="browse-category__category-icon">
+            <div class="wrap__category-icon">
+              <img src="../assets/images/PaintBrush.png" alt="category-icon">
+            </div>
           </div>
         </div>
-        <div class="browse-category__card">
-          <div class="browse-category__wrap-photo-icon">
-            <div class="browse-category__photo">
-              <img src="../assets/images/Background.png" alt="background">
-            </div>
-            <div class="browse-category__category-icon">
-              <div class="wrap__category-icon">
-                <img src="../assets/images/PaintBrush.png" alt="category-icon">
-              </div>
-            </div>
-          </div>
-          <div class="browse-category__collection-name">
-            <h3>Art</h3>
-          </div>
-        </div>
-        <div class="browse-category__card">
-          <div class="browse-category__wrap-photo-icon">
-            <div class="browse-category__photo">
-              <img src="../assets/images/Background.png" alt="background">
-            </div>
-            <div class="browse-category__category-icon">
-              <div class="wrap__category-icon">
-                <img src="../assets/images/PaintBrush.png" alt="category-icon">
-              </div>
-            </div>
-          </div>
-          <div class="browse-category__collection-name">
-            <h3>Art</h3>
-          </div>
-        </div>
-        <div class="browse-category__card">
-          <div class="browse-category__wrap-photo-icon">
-            <div class="browse-category__photo">
-              <img src="../assets/images/Background.png" alt="background">
-            </div>
-            <div class="browse-category__category-icon">
-              <div class="wrap__category-icon">
-                <img src="../assets/images/PaintBrush.png" alt="category-icon">
-              </div>
-            </div>
-          </div>
-          <div class="browse-category__collection-name">
-            <h3>Art</h3>
-          </div>
+        <div class="browse-category__collection-name">
+          <h3>Art</h3>
         </div>
       </div>
-      <div class="browse-category__wrap-card-row">
-        <div class="browse-category__card">
-          <div class="browse-category__wrap-photo-icon">
-            <div class="browse-category__photo">
-              <img src="../assets/images/Background.png" alt="background">
-            </div>
-            <div class="browse-category__category-icon">
-              <div class="wrap__category-icon">
-                <img src="../assets/images/PaintBrush.png" alt="category-icon">
-              </div>
-            </div>
+      <div class="browse-category__card">
+        <div class="browse-category__wrap-photo-icon">
+          <div class="browse-category__photo">
+            <img src="../assets/images/Background-1.png" alt="background">
           </div>
-          <div class="browse-category__collection-name">
-            <h3>Art</h3>
+          <div class="browse-category__category-icon">
+            <div class="wrap__category-icon">
+              <img src="../assets/images/Swatches.png" alt="category-icon">
+            </div>
           </div>
         </div>
-        <div class="browse-category__card">
-          <div class="browse-category__wrap-photo-icon">
-            <div class="browse-category__photo">
-              <img src="../assets/images/Background-1.png" alt="background">
-            </div>
-            <div class="browse-category__category-icon">
-              <div class="wrap__category-icon">
-                <img src="../assets/images/Swatches.png" alt="category-icon">
-              </div>
-            </div>
+        <div class="browse-category__collection-name">
+          <h3>Art</h3>
+        </div>
+      </div>
+      <div class="browse-category__card">
+        <div class="browse-category__wrap-photo-icon">
+          <div class="browse-category__photo">
+            <img src="../assets/images/Background.png" alt="background">
           </div>
-          <div class="browse-category__collection-name">
-            <h3>Art</h3>
+          <div class="browse-category__category-icon">
+            <div class="wrap__category-icon">
+              <img src="../assets/images/PaintBrush.png" alt="category-icon">
+            </div>
           </div>
         </div>
-        <div class="browse-category__card">
-          <div class="browse-category__wrap-photo-icon">
-            <div class="browse-category__photo">
-              <img src="../assets/images/Background.png" alt="background">
-            </div>
-            <div class="browse-category__category-icon">
-              <div class="wrap__category-icon">
-                <img src="../assets/images/PaintBrush.png" alt="category-icon">
-              </div>
-            </div>
+        <div class="browse-category__collection-name">
+          <h3>Art</h3>
+        </div>
+      </div>
+      <div class="browse-category__card">
+        <div class="browse-category__wrap-photo-icon">
+          <div class="browse-category__photo">
+            <img src="../assets/images/Background.png" alt="background">
           </div>
-          <div class="browse-category__collection-name">
-            <h3>Art</h3>
+          <div class="browse-category__category-icon">
+            <div class="wrap__category-icon">
+              <img src="../assets/images/PaintBrush.png" alt="category-icon">
+            </div>
           </div>
         </div>
-        <div class="browse-category__card">
-          <div class="browse-category__wrap-photo-icon">
-            <div class="browse-category__photo">
-              <img src="../assets/images/Background.png" alt="background">
-            </div>
-            <div class="browse-category__category-icon">
-              <div class="wrap__category-icon">
-                <img src="../assets/images/PaintBrush.png" alt="category-icon">
-              </div>
+        <div class="browse-category__collection-name">
+          <h3>Art</h3>
+        </div>
+      </div>
+      <div class="browse-category__card">
+        <div class="browse-category__wrap-photo-icon">
+          <div class="browse-category__photo">
+            <img src="../assets/images/Background.png" alt="background">
+          </div>
+          <div class="browse-category__category-icon">
+            <div class="wrap__category-icon">
+              <img src="../assets/images/PaintBrush.png" alt="category-icon">
             </div>
           </div>
-          <div class="browse-category__collection-name">
-            <h3>Art</h3>
+        </div>
+        <div class="browse-category__collection-name">
+          <h3>Art</h3>
+        </div>
+      </div>
+      <div class="browse-category__card">
+        <div class="browse-category__wrap-photo-icon">
+          <div class="browse-category__photo">
+            <img src="../assets/images/Background-1.png" alt="background">
           </div>
+          <div class="browse-category__category-icon">
+            <div class="wrap__category-icon">
+              <img src="../assets/images/Swatches.png" alt="category-icon">
+            </div>
+          </div>
+        </div>
+        <div class="browse-category__collection-name">
+          <h3>Art</h3>
+        </div>
+      </div>
+      <div class="browse-category__card">
+        <div class="browse-category__wrap-photo-icon">
+          <div class="browse-category__photo">
+            <img src="../assets/images/Background.png" alt="background">
+          </div>
+          <div class="browse-category__category-icon">
+            <div class="wrap__category-icon">
+              <img src="../assets/images/PaintBrush.png" alt="category-icon">
+            </div>
+          </div>
+        </div>
+        <div class="browse-category__collection-name">
+          <h3>Art</h3>
+        </div>
+      </div>
+      <div class="browse-category__card">
+        <div class="browse-category__wrap-photo-icon">
+          <div class="browse-category__photo">
+            <img src="../assets/images/Background.png" alt="background">
+          </div>
+          <div class="browse-category__category-icon">
+            <div class="wrap__category-icon">
+              <img src="../assets/images/PaintBrush.png" alt="category-icon">
+            </div>
+          </div>
+        </div>
+        <div class="browse-category__collection-name">
+          <h3>Art</h3>
         </div>
       </div>
     </div>
@@ -578,17 +578,17 @@
   <section class="discover-more">
     <div class="discover-more__wrap-headline-button">
       <div class="discover-more__headline">
-        <div class="discover-more__heading">
+        <h2 class="discover-more__heading">
           Discover More NFTs
-        </div>
-        <div class="discover-more__subhead">
+        </h2>
+        <p class="discover-more__subhead">
           Explore new trending NFTs
-        </div>
+        </p>
       </div>
-      <button class="discover-more__button">
+      <a class="discover-more__button button button--trans-main" href="#">
         <img src="../assets/images/Eye.png" alt="icon">
         <span>See All</span>
-      </button>
+      </a>
     </div>
     <div class="discover-more__wrap-card-row">
       <div class="discover-more__card">
@@ -708,17 +708,17 @@
     <div class="NFT-highlight__wrap-content">
       <div class="NFT-highlight__frame">
         <div class="NFT-highlight__content-main">
-          <div class="NFT-highlight__artist-card">
+          <a href="#" class="NFT-highlight__artist-card">
             <div class="NFT-highlight__avatar">
               <img src="../assets/images/Avatar Placeholder.png" alt="avatar">
             </div>
             <span class="NFT-highlight__name">Shroomie</span>
-          </div>
-          <h class="NFT-highlight__title">Magic Mashrooms</h>
-          <button class="NFT-highlight__button">
+          </a>
+          <h2 class="NFT-highlight__title">Magic Mashrooms</h2>
+          <a href="#" class="NFT-highlight__button button button--trans-main">
             <img src="../assets/images/Eye.png" alt="icon">
             <span>See NFT</span>
-          </button>
+          </a>
         </div>
         <div class="NFT-highlight__wrap-auction-timer">
           <p class="NFT-highlight__auction-timer-title">
@@ -749,12 +749,12 @@
   <!--begin how it works-->
   <div class="how-it-work">
     <div class="how-it-work__headline">
-      <div class="how-it-work__heading">
+      <h2 class="how-it-work__heading">
         How it works
-      </div>
-      <div class="how-it-work__subhead">
+      </h2>
+      <p class="how-it-work__subhead">
         Find out how to get started.
-      </div>
+      </p>
     </div>
     <div class="how-it-work__wrap-card">
       <div class="how-it-work__card">
@@ -804,79 +804,79 @@
         </div>
         <form class="subscribe-widget__form-sub">
           <input class="subscribe-widget__input-email" type="text" placeholder="Enter your email address">
-          <button class="subscribe-widget__button">
+          <button class="subscribe-widget__button button button--trans-other">
             <img src="../assets/images/EnvelopeSimple.png" alt="icon">
             <span>Subscribe</span>
           </button>
         </form>
       </div>
-
     </div>
   </div>
   <!--end subscribe widget-->
 
   <!--begin footer-->
   <footer class="footer">
-    <div class="footer__wrap-content">
-      <div class="footer__NTF-marketplace">
-        <a class="footer__logo">
-          <div class="footer__img-logo">
-            <img src="../assets/images/logo.png" alt="logo">
-          </div>
-          <div class="footer__img-name">
-            <img src="../assets/images/nft-marketplace-1@2x.svg" alt="name">
-          </div>
-        </a>
-        <div class="footer__additional-info">
-          <p>NFT marketplace UI created with Anima for Figma.</p>
-          <div class="footer__comunity-info">
-            <p>Join our community</p>
-            <div class="footer__social-media">
-              <a href="#">
-                <img src="../assets/images/discordlogo-1@2x.svg" alt="discord">
-              </a>
-              <a href="#">
-                <img src="../assets/images/youtubelogo-1@2x.svg" alt="youtube">
-              </a>
-              <a href="#">
-                <img src="../assets/images/twitterlogo-1@2x.svg" alt="twitter">
-              </a>
-              <a href="#">
-                <img src="../assets/images/instagramlogo-1@2x.svg" alt="instagram">
-              </a>
+    <div class="footer__wrapper">
+      <div class="footer__wrap-content">
+        <div class="footer__NTF-marketplace">
+          <a class="footer__logo">
+            <div class="footer__img-logo">
+              <img src="../assets/images/logo.png" alt="logo">
+            </div>
+            <div class="footer__img-name">
+              <img src="../assets/images/nft-marketplace-1@2x.svg" alt="name">
+            </div>
+          </a>
+          <div class="footer__additional-info">
+            <p>NFT marketplace UI created with Anima for Figma.</p>
+            <div class="footer__comunity-info">
+              <p>Join our community</p>
+              <div class="footer__social-media">
+                <a href="#">
+                  <img src="../assets/images/discordlogo-1@2x.svg" alt="discord">
+                </a>
+                <a href="#">
+                  <img src="../assets/images/youtubelogo-1@2x.svg" alt="youtube">
+                </a>
+                <a href="#">
+                  <img src="../assets/images/twitterlogo-1@2x.svg" alt="twitter">
+                </a>
+                <a href="#">
+                  <img src="../assets/images/instagramlogo-1@2x.svg" alt="instagram">
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer__explore">
-        <h5>Explore</h5>
-        <div class="footer__pages">
-          <p>Marketplace</p>
-          <p>Rankings</p>
-          <p>Connect a wallet</p>
+        <div class="footer__explore">
+          <h5>Explore</h5>
+          <div class="footer__pages">
+            <p>Marketplace</p>
+            <p>Rankings</p>
+            <p>Connect a wallet</p>
+          </div>
+        </div>
+        <div class="footer__subscribe">
+          <h5>Join our weekly digest</h5>
+          <div class="footer__wrap-info-form">
+            <p>Get exclusive promotions & updates straight to your inbox.</p>
+            <form class="footer__form-sub">
+              <input class="footer__input-email" type="text" placeholder="Enter your email address">
+              <button class="footer__button button button--trans-other">
+                <img src="../assets/images/EnvelopeSimple.png" alt="icon">
+                <span>Subscribe</span>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="footer__subscribe">
-        <h5>Join our weekly digest</h5>
-        <div class="footer__wrap-info-form">
-          <p>Get exclusive promotions & updates straight to your inbox.</p>
-          <form class="footer__form-sub">
-            <input class="footer__input-email" type="text" placeholder="Enter your email address">
-            <button class="footer__button">
-              <img src="../assets/images/EnvelopeSimple.png" alt="icon">
-              <span>Subscribe</span>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="footer__frame-end">
-        <div class="footer__divider">
-
-        </div>
+      <div class="footer__frame-end">
+        <div class="footer__divider"></div>
         <p>Ⓒ NFT Market. Use this template freely.</p>
+      </div>
     </div>
   </footer>
   <!--end footer-->
 </body>
+
 </html>

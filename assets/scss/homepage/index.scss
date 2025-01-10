@@ -1,3 +1,5 @@
+@use "../_common";
+
 /*begin nav*/
 .navigation {
   display: flex;
@@ -38,6 +40,10 @@
     gap: 10px;
   }
 
+  &__icon-responsive {
+    display: none;
+  }
+
   &__item {
     display: flex;
     height: 46px;
@@ -45,6 +51,14 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    @extend .trans;
   }
 
   &__button {
@@ -58,11 +72,12 @@
 /*begin hero*/
 .hero {
   display: flex;
-  padding: 80px 195px;
+  padding: 80px 0;
   justify-content: center;
   align-items: center;
   gap: 30px;
   align-self: stretch;
+
 
   &__frame {
     display: flex;
@@ -126,7 +141,6 @@
         font-weight: 700;
         line-height: 140%;
         text-transform: capitalize;
-        margin: 0;
       }
 
       span {
@@ -174,7 +188,7 @@
       font-weight: 600;
       line-height: 140%;
       text-transform: capitalize;
-      margin: 0;
+      
       display: inline;
     }
   }
@@ -208,18 +222,20 @@
     line-height: 140%;
   }
 }
-
 /*end hero*/
 
 
 /*trending collection*/
 .trending-collection {
-  display: flex;
   padding: 80px 0px;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  align-self: stretch;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    align-self: stretch;
+  }
 
   &__headline {
     display: flex;
@@ -273,6 +289,7 @@
     height: 330px;
     align-self: stretch;
     border-radius: 20px;
+    @extend .trans;
   }
 
   &__frame {
@@ -285,6 +302,7 @@
       height: 100px;
       flex: 1 0 0;
       border-radius: 20px;
+      @extend .trans;
     }
   }
 
@@ -299,6 +317,7 @@
     flex: 1 0 0;
     background: var(--Call-to-Action, #A259FF);
     border-radius: 20px;
+    @extend .trans;
 
     span {
       font-size: 22px;
@@ -329,13 +348,13 @@
     }
   }
 }
-
 /*end trending collection*/
+
 
 /*begin top rated artist*/
 .top-rated-artists {
   display: flex;
-  padding: 80px 195px;
+  padding: 80px 0;
   flex-direction: column;
   align-items: center;
   gap: 60px;
@@ -345,8 +364,7 @@
     display: flex;
     width: 1050px;
     align-items: flex-end;
-    gap: 100px;
-    margin: auto;
+    justify-content: space-between;
   }
 
   &__headline {
@@ -369,16 +387,9 @@
   }
 
   &__wrap-card-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
-
-  &__wrap-card-row {
-    display: flex;
     width: 1050px;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
 
@@ -388,10 +399,10 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    flex: 1 0 0;
     border-radius: 20px;
     background: #3B3B3B;
     position: relative;
+    @extend .trans;
   }
 
   &__avatar {
@@ -426,7 +437,6 @@
       line-height: 140%;
       /* 30.8px */
       text-transform: capitalize;
-      margin: 0;
     }
   }
 
@@ -477,13 +487,13 @@
     }
   }
 }
-
 /*end top rated artist*/
+
 
 /*begin browse category*/
 .browse-category {
   display: flex;
-  padding: 80px 195px;
+  padding: 80px 0;
   flex-direction: column;
   align-items: center;
   gap: 60px;
@@ -499,10 +509,6 @@
 
   &__wrap-card-grid {
     @extend .top-rated-artists__wrap-card-grid;
-  }
-
-  &__wrap-card-row {
-    @extend .top-rated-artists__wrap-card-row;
   }
 
   &__card {
@@ -563,17 +569,16 @@
       font-weight: 600;
       line-height: 140%;
       text-transform: capitalize;
-      margin: 0;
     }
   }
 }
-
 /*end browse category*/
+
 
 /*begin discover more NFTs*/
 .discover-more {
   display: flex;
-  padding: 80px 195px;
+  padding: 80px 0;
   flex-direction: column;
   align-items: center;
   gap: 60px;
@@ -603,7 +608,7 @@
   }
 
   &__wrap-card-row {
-    @extend .top-rated-artists__wrap-card-row;
+    @extend .trending-collection__wrap-card;
   }
 
   &__card {
@@ -613,6 +618,7 @@
     flex-direction: column;
     align-items: center;
     flex: 1 0 0;
+    @extend .trans;
   }
 
   &__image-main {
@@ -717,8 +723,8 @@
     @extend .discover-more__price-value;
   }
 }
-
 /*end discover more NFTs*/
+
 
 /*begin NFT highlight*/
 .NFT-highlight {
@@ -726,7 +732,7 @@
   flex-direction: column;
   align-items: center;
   align-self: stretch;
-  background-image: url("../images/nft-highlight@1x.png");
+  background-image: url("../../images/nft-highlight@1x.png");
   background-color: lightgray;
   background-position: 50%;
   background-size: cover;
@@ -734,7 +740,7 @@
 
   &__wrap-content {
     display: flex;
-    padding: 360px 195px 60px 195px;
+    padding: 360px 0 60px 0;
     justify-content: center;
     align-items: flex-end;
     align-self: stretch;
@@ -792,7 +798,6 @@
     font-weight: 600;
     line-height: 110%;
     text-transform: capitalize;
-    margin: 0;
   }
 
   &__button {
@@ -824,7 +829,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
-    margin: 0;
   }
 
   &__timer {
@@ -840,7 +844,6 @@
       line-height: 140%;
       /* 39.2px */
       text-transform: capitalize;
-      margin: 0;
     }
   }
 
@@ -857,7 +860,6 @@
       font-weight: 700;
       line-height: 120%;
       text-transform: capitalize;
-      margin: 0;
     }
 
     span {
@@ -868,13 +870,13 @@
     }
   }
 }
-
 /*end NFT highlight*/
+
 
 /*begin how it work*/
 .how-it-work {
   display: flex;
-  padding: 80px 195px;
+  padding: 80px 0;
   flex-direction: column;
   align-items: center;
   gap: 48px;
@@ -898,13 +900,19 @@
 
   &__card {
     display: flex;
-    width: 330px;
+    flex: 1;
     padding: 10px 30px 30px 30px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     background: #3b3b3b;
     border-radius: 20px;
+
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+    }
   }
 
   &__card-detail {
@@ -931,13 +939,13 @@
     text-align: center;
   }
 }
-
 /*end how it word*/
+
 
 /* begin subscribe widget*/
 .subscribe-widget {
   display: flex;
-  padding: 40px 195px 80px 195px;
+  padding: 40px 0 80px 0;
   flex-direction: column;
   align-items: center;
   gap: 10px;
@@ -956,7 +964,6 @@
   &__image {
     height: 310px;
     min-width: 425px;
-    flex: 1 0 0;
     border-radius: 20px;
     object-fit: cover;
   }
@@ -998,17 +1005,18 @@
 
   &__form-sub {
     display: flex;
-    height: 60px;
-    padding: 16px 0px 16px 20px;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
     align-self: stretch;
     border-radius: 20px;
     background: #ffff;
 
     input {
+      padding: 20px 11px;
+      border-radius: 20px;
+      height: 60px;
       font-size: 16px;
-      font-style: normal;
+      font-style: normal; 
       font-weight: 400;
       line-height: 140%;
       color: #2B2B2B;
@@ -1020,19 +1028,22 @@
     }
   }
 }
-
 /*end subscribe widget*/
+
 
 /*begin footer*/
 .footer {
-  display: flex;
-  padding: 40px 195px;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  align-self: stretch;
+  padding: 40px 0;
   background-color: #3B3B3B;
   margin-bottom: 25px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+  }
 
   &__wrap-content {
     display: flex;
@@ -1094,6 +1105,7 @@
   }
 
   h5 {
+    font-family: var(--font-other);
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -1113,7 +1125,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
-    width: 420px;
+
+    P {
+      width: 330px;
+    }
   }
 
   &__wrap-info-form {
@@ -1147,7 +1162,5 @@
     width: 1049.414px;
     height: 1px;
   }
-
 }
-
 /*end footer*/
