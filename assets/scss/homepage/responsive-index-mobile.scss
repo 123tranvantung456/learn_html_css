@@ -6,7 +6,12 @@
 
     &__frame {
       width: 315px;
-      flex-direction: column;
+      grid-template-areas: 
+      "content"
+      "highlight"
+      "button"
+      "add-info";
+      row-gap: 40px;
     }
 
     &__content{
@@ -104,6 +109,13 @@
       gap: 30px;
     }
 
+    &__wrapper{
+      grid-template-areas: 
+      "headline"
+      "list-box"
+      "button";
+    }
+
     &__button {
       width: 100%;
     }
@@ -116,9 +128,9 @@
       width: 315px;
       grid-template-columns: 1fr;
       gap: 30px;
-      // @for(){
-
-      // }
+      :nth-child(5){
+        display: none;
+      }
     }
 
 
@@ -180,11 +192,11 @@
 
   /*begin discover more NFTs*/
   .discover-more {
-    padding: 40px 0;
+    padding: 40px 0 60px 0;
     gap: 40px;
 
-    &__wrap-headline-button {
-      @extend .top-rated-artists__wrap-headline-button;
+    &__wrapper{
+      @extend .top-rated-artists__wrapper;
     }
 
     &__headline {

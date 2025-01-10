@@ -65,19 +65,21 @@
 /*begin hero*/
 .hero {
   display: flex;
-  padding: 80px 0;
+  padding: 80px 0px;
   justify-content: center;
   align-items: center;
   gap: 30px;
   align-self: stretch;
 }
 .hero__frame {
-  display: flex;
+  display: grid;
+  grid-template-areas: "content highlight" "button highlight" "add-info highlight";
   width: 1050px;
-  align-items: flex-start;
-  gap: 30px;
+  row-gap: 20px;
+  column-gap: 30px;
 }
 .hero__content {
+  grid-area: content;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -107,12 +109,15 @@
 }
 .hero__button {
   padding: 0px 50px;
+  grid-area: button;
+  width: 224px;
 }
 .hero__additional-info {
   display: flex;
   align-items: flex-start;
   gap: 30px;
   align-self: stretch;
+  grid-area: add-info;
 }
 .hero__additional-info li {
   display: flex;
@@ -140,7 +145,7 @@
   height: 510px;
   flex-direction: column;
   align-items: center;
-  flex: 1 0 0;
+  grid-area: highlight;
 }
 .hero__image {
   border-radius: 20px 20px 0px 0px;
@@ -299,30 +304,29 @@
 .top-rated-artists {
   display: flex;
   padding: 80px 0;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  align-self: stretch;
+  justify-content: center;
 }
-.top-rated-artists__wrap-headline-button, .discover-more__wrap-headline-button {
-  display: flex;
-  width: 1050px;
-  align-items: flex-end;
-  justify-content: space-between;
+.top-rated-artists__wrapper, .discover-more__wrapper {
+  display: grid;
+  grid-template-areas: "headline button" "list-box list-box";
+  row-gap: 40px;
 }
 .top-rated-artists__headline, .discover-more__headline {
   width: 703px;
+  grid-area: headline;
 }
 .top-rated-artists__button, .discover-more__button {
   padding: 0px 50px;
   background-color: var(--color-background);
   border: 2px solid var(--Call-to-Action, #A259FF);
+  grid-area: button;
 }
 .top-rated-artists__wrap-card-grid, .browse-category__wrap-card-grid {
   width: 1050px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  grid-area: list-box;
 }
 .top-rated-artists__card, .browse-category__card {
   display: flex;
@@ -361,7 +365,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
-  /* 30.8px */
   text-transform: capitalize;
 }
 .top-rated-artists__total-sales {
@@ -477,15 +480,10 @@
 .discover-more {
   display: flex;
   padding: 80px 0;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  align-self: stretch;
+  justify-content: center;
 }
-.discover-more__wrap-headline-button {
-  align-content: flex-end;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.discover-more__wrap-card-row, .how-it-work__wrap-card {
+  grid-area: list-box;
 }
 .discover-more__card {
   display: flex;

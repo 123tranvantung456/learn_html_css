@@ -5,7 +5,8 @@
   }
   .hero__frame {
     width: 315px;
-    flex-direction: column;
+    grid-template-areas: "content" "highlight" "button" "add-info";
+    row-gap: 40px;
   }
   .hero__content {
     width: 100%;
@@ -69,10 +70,13 @@
     padding: 40px 0;
     gap: 40px;
   }
-  .top-rated-artists__wrap-headline-button, .discover-more__wrap-headline-button {
+  .top-rated-artists__wrap-headline-button {
     width: 315px;
     flex-direction: column;
     gap: 30px;
+  }
+  .top-rated-artists__wrapper, .discover-more__wrapper {
+    grid-template-areas: "headline" "list-box" "button";
   }
   .top-rated-artists__button {
     width: 100%;
@@ -84,6 +88,9 @@
     width: 315px;
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  .top-rated-artists__wrap-card-grid :nth-child(5) {
+    display: none;
   }
   .top-rated-artists__card {
     flex-direction: row;
@@ -129,7 +136,7 @@
   /*end browse category*/
   /*begin discover more NFTs*/
   .discover-more {
-    padding: 40px 0;
+    padding: 40px 0 60px 0;
     gap: 40px;
   }
   .discover-more__headline {
