@@ -113,6 +113,22 @@ ul {
   transform-origin: center;
 }
 
+.container {
+  max-width: 1050px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 690px;
+  }
+}
+@media (max-width: 840px) {
+  .container {
+    max-width: 315px;
+  }
+}
 /*begin nav*/
 .navigation {
   display: flex;

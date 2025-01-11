@@ -1,0 +1,112 @@
+/*back-ground*/
+.img-back-ground {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/*end back-ground*/
+/*profile-image*/
+.profile-image {
+  margin-top: -70px;
+  display: flex;
+}
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+/*end profile-image*/
+/*artist-info*/
+.artist-info {
+  padding: 40px 0;
+}
+.artist-info__wrap-name-and-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.artist-info__name {
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: capitalize;
+}
+.artist-info__wrap-button {
+  display: flex;
+  gap: 20px;
+}
+.artist-info__wrap-button a {
+  padding: 0 50px;
+}
+.artist-info__wrap-button a:nth-child(2) {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-main);
+}
+.artist-info__info-main {
+  width: 599px;
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  flex-direction: column;
+}
+.artist-info__list-number {
+  width: 510px;
+  display: flex;
+  gap: 30px;
+}
+.artist-info__item-number {
+  flex: 1 0 0;
+}
+.artist-info__number {
+  font-family: var(--font-other);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+.artist-info__text {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+.artist-info__add-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.artist-info__add-info p {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+.artist-info h5 {
+  color: #858584;
+  font-family: var(--font-other);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+.artist-info__wrap-social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.artist-info__social-media {
+  display: flex;
+  gap: 10px;
+}
+
+/*end artist-info*/
+/*frame*/
+/*end frame*/
+
+/*# sourceMappingURL=artist-page.css.map */
