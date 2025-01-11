@@ -39,8 +39,15 @@
 }
 .connect-wallet-and-cre-acc__image-main {
   flex: 1 0 0;
-  height: 642px;
   object-fit: cover;
+}
+.connect-wallet-and-cre-acc__image-main--connect-wallet {
+  height: 642px;
+  width: 610px;
+}
+.connect-wallet-and-cre-acc__image-main--cre-acc {
+  height: 691px;
+  width: 610;
 }
 .connect-wallet-and-cre-acc__connect {
   flex: 1 0 0;

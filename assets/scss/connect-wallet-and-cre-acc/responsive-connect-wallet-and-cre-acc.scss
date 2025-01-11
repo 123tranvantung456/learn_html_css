@@ -2,10 +2,15 @@
   .connect-wallet-and-cre-acc {
     gap: 40px;
     &__image-main{
-      width: 397px;
-      height: 530px;
-    }
+      width: 397px; 
+      &--connect-wallet{
+        height: 530px;
+      }
 
+      &--cre-acc{
+        height: 615px;
+      }
+    }
     &__headline {
       width: 325px;
     }
@@ -20,7 +25,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   .connect-wallet-and-cre-acc {
     flex-direction: column;
     &__image-main{
@@ -30,7 +35,9 @@
     }
 
     &__connect{
+      padding: 0 0 40px 0;
       width: 315px;
+      gap: 30px;
     }
 
     &__wallet-options{

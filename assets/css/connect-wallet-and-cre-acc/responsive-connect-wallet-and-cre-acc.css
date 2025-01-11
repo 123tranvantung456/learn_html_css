@@ -4,7 +4,12 @@
   }
   .connect-wallet-and-cre-acc__image-main {
     width: 397px;
+  }
+  .connect-wallet-and-cre-acc__image-main--connect-wallet {
     height: 530px;
+  }
+  .connect-wallet-and-cre-acc__image-main--cre-acc {
+    height: 615px;
   }
   .connect-wallet-and-cre-acc__headline {
     width: 325px;
@@ -16,7 +21,7 @@
     font-size: 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   .connect-wallet-and-cre-acc {
     flex-direction: column;
   }
@@ -26,7 +31,9 @@
     object-fit: cover;
   }
   .connect-wallet-and-cre-acc__connect {
+    padding: 0 0 40px 0;
     width: 315px;
+    gap: 30px;
   }
   .connect-wallet-and-cre-acc__wallet-options {
     width: 100%;

@@ -7,8 +7,17 @@
 
   &__image-main {
     flex: 1 0 0;
-    height: 642px;
     object-fit: cover;
+  
+    &--connect-wallet{
+      height: 642px;
+      width: 610px;
+    }
+
+    &--cre-acc{
+      height: 691px;
+      width: 610;
+    }
   }
 
   &__connect {
