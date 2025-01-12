@@ -63,6 +63,9 @@
   .artist-info {
     padding: 40px 0;
   }
+  .artist-info__name {
+    font-size: 28px;
+  }
   .artist-info__wrap-button {
     flex-direction: column;
   }
