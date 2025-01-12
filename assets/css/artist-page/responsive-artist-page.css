@@ -37,6 +37,9 @@
   }
   /*end artist-info*/
   /*frame*/
+  .frame__tab {
+    padding: 0px 10px;
+  }
   .frame__text {
     font-size: 16px;
   }

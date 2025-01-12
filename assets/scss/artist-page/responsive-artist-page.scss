@@ -53,6 +53,10 @@
 /*frame*/
 .frame {
 
+  &__tab{
+    padding: 0px 10px;
+  }
+
   &__text {
     font-size: 16px;
   }
