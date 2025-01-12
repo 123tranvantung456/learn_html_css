@@ -37,6 +37,19 @@ p {
   padding: 0;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th, td {
+  margin: 0; 
+  padding: 0;
+  border: none;  
+  text-align: left;
+}
+
 input {
   border: 0;
   padding: 0;
@@ -114,6 +127,11 @@ ul {
     max-width: 315px;
   }
 }
+
+
+
+
+
 
 
 /*begin nav*/
