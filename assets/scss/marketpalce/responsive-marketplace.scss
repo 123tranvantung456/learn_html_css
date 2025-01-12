@@ -1,0 +1,41 @@
+@media (max-width: 1200px) {
+  /*top-marketplace*/
+.top-marketplace {
+  &__heading {
+    font-size: 38px;
+  }
+
+  &__subhead {
+    font-size: 16px;
+  }
+}
+/*end top-marketplace*/
+
+/*frame*/
+.frame {
+  &__text {
+    font-size: 16px
+  }
+}
+/*end frame*/
+}
+
+@media (max-width: 840px) {
+   /*top-marketplace*/
+.top-marketplace {
+
+  &__heading {
+    font-size: 28px;
+  }
+
+}
+/*end top-marketplace*/
+
+/*frame*/
+.frame {
+  &__number{
+    display: none;
+  }
+}
+/*end frame*/
+}
