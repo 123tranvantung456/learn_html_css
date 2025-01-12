@@ -1,0 +1,90 @@
+/*trans*/
+.trans {
+  transition: all 0.3s ease;
+}
+.trans:hover {
+  transform: scale(0.95);
+}
+
+/*end trans*/
+/*head*/
+.headline, .connect-wallet-and-cre-acc__headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.heading, .connect-wallet-and-cre-acc__heading {
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+.subhead, .connect-wallet-and-cre-acc__subhead {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+/*end head*/
+.connect-wallet-and-cre-acc {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.connect-wallet-and-cre-acc__image-main {
+  flex: 1 0 0;
+  height: 642px;
+  object-fit: cover;
+}
+.connect-wallet-and-cre-acc__connect {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.connect-wallet-and-cre-acc__headline {
+  gap: 20px;
+  width: 460px;
+}
+.connect-wallet-and-cre-acc__heading {
+  font-size: 51px;
+  line-height: 110%;
+}
+.connect-wallet-and-cre-acc__wallet-options {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  gap: 20px;
+}
+.connect-wallet-and-cre-acc__item {
+  display: flex;
+  height: 72px;
+  padding: 0px 20px 0px 40px;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--color-main);
+  background: #3B3B3B;
+}
+.connect-wallet-and-cre-acc__item img {
+  width: 40px;
+  height: 37.082px;
+}
+.connect-wallet-and-cre-acc__item span {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+/*responsive*/
+/*end responsive*/
+
+/*# sourceMappingURL=connect-wallet.css.map */
